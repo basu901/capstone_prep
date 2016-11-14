@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UFIT</string>
+    <string name="routine_header">ROUTINE MAKER</string>
+    <string name="routine_header_cd">Tab to make routines</string>
+    <string name="routine_add_cd">Tap to create new routine</string>
+    <string name="routine_details_header">ROUTINE HEADER:</string>
+    <string name="routine_hint">Workout details..</string>
+    <string name="routine_added_workout_detail_cd">Add to routine</string>
+    <string name="routine_completed_cd">Add routine</string>
+    <string name="routine_detail_clear_cd">Remove Item</string>
+    <string name="title_activity_login">Sign in</string>
+
+    //Login Details
+    <string name="first_name">FIRST NAME : </string>
+    <string name="last_name">LAST NAME : </string>
+    <string name="dob">DATE OF BIRTH : </string>
+    <string name="weight">WEIGHT : </string>
+    <string name="height">HEIGHT : </string>
+    <string name="weight_hint">In Kilograms</string>
+    <string name="height_hint">In meters</string>
+    <string name="begin_button">BEGIN!</string>
+</resources>
