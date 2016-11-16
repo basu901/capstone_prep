@@ -9,6 +9,13 @@
     <string name="routine_completed_cd">Add routine</string>
     <string name="routine_detail_clear_cd">Remove Item</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="colon">:</string>
+    <string name="icon_holder">icon holder</string>
+    <string name="not_filled">Data not provided</string>
+    <string name="weight_small">Weight</string>
+    <string name="height_small">Height</string>
+    <string name="dob_small">Date Of Birth</string>
+    <string name="bmi">Body Mass Index</string>
 
     //Login Details
     <string name="first_name">FIRST NAME : </string>
@@ -19,4 +26,21 @@
     <string name="weight_hint">In Kilograms</string>
     <string name="height_hint">In meters</string>
     <string name="begin_button">BEGIN!</string>
+    <string name="user_shared_pref">com.example.shaunakbasu.capstone.USER_DETAILS</string>
+    <string name="user_weight">USER_WEIGHT</string>
+    <string name="user_first_name">USER_FIRST_NAME</string>
+    <string name="user_last_name">USER_LAST_NAME</string>
+    <string name="user_height">USER_HEIGHT</string>
+    <string name="user_dob">USER_DOB</string>
+    <string name="user_bmi">USER_BMI</string>
+
+    //calorie
+    <string name="calorie">Calories</string>
+    <string name="calorie_add_cd">Click to add calorie</string>
+    <string name="calorie_click">Click to view calorie details</string>
+
+    //graph
+    <string name="graph">Graph</string>
+    <string name="graph_click">Click to view graph details</string>
+
 </resources>

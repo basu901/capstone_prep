@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF9C4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/calorie_item_text_desc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/colon"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/calorie_item_text_colon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        android:id="@+id/calorie_item_text_info"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/ripple_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/calorie_add_cd"
+        android:src="@drawable/ic_add_circle_black_24dp"
+        android:layout_gravity="start"/>
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

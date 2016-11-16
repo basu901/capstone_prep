@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.shaunakbasu.capstone.adapters.RoutineChildAdapter;
 import com.example.shaunakbasu.capstone.data.RoutineDetailsColumns;
+import com.example.shaunakbasu.capstone.data.CalorieIntakeProvider;
 import com.example.shaunakbasu.capstone.data.RoutineDetailsProvider;
 
 /**

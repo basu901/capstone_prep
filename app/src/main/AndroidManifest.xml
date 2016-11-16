@@ -19,7 +19,7 @@
 
         <provider
             android:name=".data.generated.RoutineDetailsProvider"
-            android:authorities="com.example.shaunakbasu.capstone.data.RoutineDetailsProvider"
+            android:authorities="com.example.shaunakbasu.capstone.data.CalorieIntakeProvider"
             android:exported="false" />
 
         <activity android:name=".RoutineFragment">
