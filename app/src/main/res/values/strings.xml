@@ -33,6 +33,7 @@
     <string name="user_height">USER_HEIGHT</string>
     <string name="user_dob">USER_DOB</string>
     <string name="user_bmi">USER_BMI</string>
+    <string name="logged_in">HAS LOGGED</string>
 
     //calorie
     <string name="calorie">Calories</string>
@@ -42,5 +43,9 @@
     //graph
     <string name="graph">Graph</string>
     <string name="graph_click">Click to view graph details</string>
+
+    //stopwatch
+    <string name="play_cd">Click to play or pause</string>
+    <string name="reset">Click to reset</string>
 
 </resources>

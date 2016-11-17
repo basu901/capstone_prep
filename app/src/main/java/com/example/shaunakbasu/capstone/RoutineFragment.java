@@ -59,7 +59,8 @@ public class RoutineFragment extends Fragment implements LoaderManager.LoaderCal
             }
         }*/
 
-        if(cursor.moveToFirst()){
+        if(cursor!=null&&cursor.getCount()>0){
+            cursor.moveToFirst();
             getLoaderManager().initLoader(LOADER_ROUTINE_ITEMS, null, this);
             routineParentAdapter=new RoutineParentAdapter(getActivity().getApplicationContext(),null,0);
             routine_list= (ListView) rootView.findViewById(R.id.routine_list);
@@ -75,8 +76,9 @@ public class RoutineFragment extends Fragment implements LoaderManager.LoaderCal
                     startActivity(intent);
                 }
             });
+            cursor.close();
         }
-        cursor.close();
+
         add_routine=(ImageButton)rootView.findViewById(R.id.routine_add_button);
         add_routine.setOnClickListener(new View.OnClickListener() {
             @Override

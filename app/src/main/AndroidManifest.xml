@@ -13,16 +13,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
 
-        </activity>
 
         <provider
             android:name=".data.generated.RoutineDetailsProvider"
-            android:authorities="com.example.shaunakbasu.capstone.data.CalorieIntakeProvider"
+            android:authorities="com.example.shaunakbasu.capstone.data.RoutineDetailsProvider"
             android:exported="false" />
 
-        <activity android:name=".RoutineFragment">
+        <activity android:name=".MainDisplayActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,14 +33,17 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RoutineFragment" />
+                android:value=".MainDisplayActivity" />
         </activity>
         <activity android:name=".RoutineDisplay">
             android:label="Routine Detail"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RoutineFragment" />
+                android:value=".MainDisplayActivity" />
+        </activity>
+        <activity android:name=".Login"
+            android:noHistory="true">
         </activity>
     </application>
 

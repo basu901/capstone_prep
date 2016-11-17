@@ -48,6 +48,7 @@ public class Login extends AppCompatActivity {
                 user_edit.putString(getResources().getString(R.string.user_dob),dob.getText().toString());
                 user_edit.putString(getResources().getString(R.string.user_weight),weight.getText().toString());
                 user_edit.putString(getResources().getString(R.string.user_height),height.getText().toString());
+                user_edit.putBoolean(getResources().getString(R.string.logged_in),true);
 
                 user_edit.apply();
 

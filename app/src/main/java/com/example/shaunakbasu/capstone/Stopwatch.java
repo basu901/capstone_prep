@@ -4,16 +4,20 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
- * Created by shaunak basu on 16-11-2016.
+ * Created by shaunak basu on 17-11-2016.
  */
-public class test extends AppCompatActivity {
-    Button butnstart, butnreset;
+public class Stopwatch extends Fragment {
+
+    ImageButton start, reset;
     TextView time;
     long starttime = 0L;
     long timeInMilliseconds = 0L;
@@ -25,27 +29,34 @@ public class test extends AppCompatActivity {
     int milliseconds = 0;
     Handler handler = new Handler();
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activtiy_check);
-        butnstart = (Button) findViewById(R.id.start);
-        butnreset = (Button) findViewById(R.id.reset);
-        time = (TextView) findViewById(R.id.timer);
 
-        butnstart.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.stopwatch,container,false);
+        start=(ImageButton)rootView.findViewById(R.id.stopwatch_play);
+        reset=(ImageButton)rootView.findViewById(R.id.stopwatch_reset);
+
+        time=(TextView)rootView.findViewById(R.id.stopwatch_text);
+
+
+        start.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
 
                 if (t == 1) {
-                    butnstart.setText("Pause");
+                    start.setImageResource(R.drawable.ic_pause_circle_filled_black_48dp);
                     starttime = SystemClock.uptimeMillis();
                     handler.postDelayed(updateTimer, 0);
                     t = 0;
                 } else {
-                    butnstart.setText("Start");
+                    start.setImageResource(R.drawable.ic_play_circle_filled_black_48dp);
                     time.setTextColor(Color.BLUE);
                     timeSwapBuff += timeInMilliseconds;
                     handler.removeCallbacks(updateTimer);
@@ -53,7 +64,10 @@ public class test extends AppCompatActivity {
                 }}
         });
 
-        butnreset.setOnClickListener(new View.OnClickListener() {
+
+
+
+        reset.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -66,11 +80,17 @@ public class test extends AppCompatActivity {
                 secs = 0;
                 mins = 0;
                 milliseconds = 0;
-                butnstart.setText("Start");
+                start.setImageResource(R.drawable.ic_play_circle_filled_black_48dp);
                 handler.removeCallbacks(updateTimer);
                 time.setText("00:00:00");
             }});
+
+
+
+        return rootView;
+
     }
+
 
     public Runnable updateTimer = new Runnable() {
         public void run() {
