@@ -19,4 +19,12 @@ public class Utility {
 
         return bmi;
     }
+
+    public static boolean hasOnlyAlphabets(String s){
+        if(s.matches("[a-zA-Z]+")&& s.length()>2)
+            return true;
+        else
+            return false;
+    }
+
 }

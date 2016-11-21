@@ -15,7 +15,7 @@
     <string name="weight_small">Weight</string>
     <string name="height_small">Height</string>
     <string name="dob_small">Date Of Birth</string>
-    <string name="bmi">Body Mass Index</string>
+    <string name="bmi_small">BMI</string>
 
     //Login Details
     <string name="first_name">FIRST NAME : </string>
@@ -24,7 +24,7 @@
     <string name="weight">WEIGHT : </string>
     <string name="height">HEIGHT : </string>
     <string name="weight_hint">In Kilograms</string>
-    <string name="height_hint">In meters</string>
+    <string name="height_hint">In Meters</string>
     <string name="begin_button">BEGIN!</string>
     <string name="user_shared_pref">com.example.shaunakbasu.capstone.USER_DETAILS</string>
     <string name="user_weight">USER_WEIGHT</string>
@@ -34,6 +34,10 @@
     <string name="user_dob">USER_DOB</string>
     <string name="user_bmi">USER_BMI</string>
     <string name="logged_in">HAS LOGGED</string>
+    <string name="date_format">MM-DD-YYYY</string>
+    <string name="not_valid"> is not valid.Please try again</string>
+    <string name="calorie_button">CALORIE</string>
+    <string name="graph_button">GRAPH</string>
 
     //calorie
     <string name="calorie">Calories</string>
@@ -47,5 +51,18 @@
     //stopwatch
     <string name="play_cd">Click to play or pause</string>
     <string name="reset">Click to reset</string>
+
+    //map
+    <string name="marker_start">START</string>
+    <string name="map_distance_label">Distance : </string>
+    <string name="map_time_label">Time : </string>
+    <string name="map_speed_label">Avg. miles/hr : </string>
+    <string name="map_activity_other">Other : </string>
+    <string name="map_start_run">START RUN</string>
+    <string name="map_stop_run">STOP RUN</string>
+    <string name="map_other">Other : </string>
+    <string name="map_running_cd">Running Distance</string>
+    <string name="map_walking_cd">Walking Distance</string>
+    <string name="map_biking_cd">Biking Distance</string>
 
 </resources>

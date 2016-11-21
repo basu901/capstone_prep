@@ -12,6 +12,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <include layout="@layout/main_activity_toolbar"/>
+
         <android.support.design.widget.TabLayout
             android:id="@+id/sliding_tabs"
             android:layout_width="match_parent"
@@ -34,75 +36,8 @@
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_elements"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/lst_menu_items"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <com.andexert.library.RippleView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:rv_rippleDuration="200"
-                app:rv_centered="true">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:id="@+id/calorie_button"
-                android:layout_height="wrap_content" />
-
-            </com.andexert.library.RippleView>
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/calorie_click"
-                android:src="@drawable/ic_calorie"/>
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <com.andexert.library.RippleView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:rv_rippleDuration="200"
-                app:rv_centered="true">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:id="@+id/graph_button"/>
-
-            </com.andexert.library.RippleView>
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/graph_click"
-                android:src="@drawable/ic_graph"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

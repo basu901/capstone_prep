@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- <ListView
+         android:id="@+id/lst_menu_items"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal">
+
+         <com.andexert.library.RippleView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:rv_rippleDuration="200"
+             app:rv_centered="true">
+
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:id="@+id/calorie_button"
+                 android:text="@string/calorie_button"
+                 android:layout_height="wrap_content" />
+
+         </com.andexert.library.RippleView>
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:contentDescription="@string/calorie_click" />
+
+     </LinearLayout>
+
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal">
+
+         <com.andexert.library.RippleView
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:rv_rippleDuration="200"
+             app:rv_centered="true">
+
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:text="@string/graph_button"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/graph_button"/>
+
+         </com.andexert.library.RippleView>
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:contentDescription="@string/graph_click"
+             android:src="@drawable/ic_graph"/>
+
+     </LinearLayout>-->
+
+</LinearLayout>

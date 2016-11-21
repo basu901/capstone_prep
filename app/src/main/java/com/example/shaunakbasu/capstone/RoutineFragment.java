@@ -39,8 +39,10 @@ public class RoutineFragment extends Fragment implements LoaderManager.LoaderCal
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
+        if(rootView==null){
+            rootView=inflater.inflate(R.layout.routine_maker,container,false);
+        }
 
-        rootView=inflater.inflate(R.layout.routine_maker,container,false);
 
         return rootView;
     }

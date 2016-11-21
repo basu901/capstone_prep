@@ -80,6 +80,7 @@
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
+        android:hint="@string/date_format"
         android:id="@+id/editText_dob"
         android:textColor="@android:color/white"
         android:layout_alignBottom="@+id/dob"

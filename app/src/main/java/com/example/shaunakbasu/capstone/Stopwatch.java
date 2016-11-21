@@ -28,6 +28,7 @@ public class Stopwatch extends Fragment {
     int mins = 0;
     int milliseconds = 0;
     Handler handler = new Handler();
+    View rootView;
 
 
     @Override
@@ -37,7 +38,11 @@ public class Stopwatch extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.stopwatch,container,false);
+
+        if(rootView==null){
+            rootView= inflater.inflate(R.layout.stopwatch,container,false);
+        }
+
         start=(ImageButton)rootView.findViewById(R.id.stopwatch_play);
         reset=(ImageButton)rootView.findViewById(R.id.stopwatch_reset);
 

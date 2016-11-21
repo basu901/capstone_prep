@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.shaunakbasu.capstone.RoutineFragment;
+import com.example.shaunakbasu.capstone.RunFragment;
 import com.example.shaunakbasu.capstone.Stopwatch;
 
 /**
@@ -24,9 +25,12 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
+                RunFragment runFragment = new RunFragment();
+                return runFragment;
+            case 1:
                 Stopwatch stopwatch = new Stopwatch();
                 return stopwatch;
-            case 1:
+            case 2:
                 RoutineFragment routine = new RoutineFragment();
                 return routine;
             default:
